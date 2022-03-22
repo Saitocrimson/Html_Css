@@ -1,0 +1,56 @@
+body{background:black;}
+
+.water {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  background: transparent;
+  top: 50%;
+  left: 900px;
+  transform: translate(-50%, -50%);
+  border: 70px solid whitesmoke ;
+  border-bottom: 70px solid whitesmoke;
+  border-top: transparent;
+  padding: 0;
+  margin: 0;
+  background-image: url(/mar4.png);
+  background-repeat: repeat-x;
+  -webkit-box-reflect: below 180px linear-gradient(transparent, transparent, #0007);
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+  0% {
+    background-position: left 0px top 1000px;
+  }
+
+
+  40% {
+    background-position: left 1600px top -1px;
+  }
+
+  80% {
+    background-position: left 3200px top -1px;
+  }
+
+
+  100% {
+    background-position: left 6400px top 1000px;
+  }
+
+}
+
+.water:before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  border: 70px solid whitesmoke;
+  border-left: transparent;
+  right: -536px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  top: 60px;
+  -webkit-box-reflect: below 700px linear-gradient(transparent, transparent, #0007);
+}
+
