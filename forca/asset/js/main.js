@@ -4,7 +4,7 @@ var resul=document.getElementById("resul")
 var botao=document.getElementById("Bot2")
 var aux;
 var cadeia=[]
-var palavras=["pudim", "folha","ponto","clipe","caixa","nota","canto","mel","azul","lapis","dengo","lobo","mal","lirio",""];
+var palavras=["pudim", "folha","ponto","clipe","caixa","nota","canto","mel","azul","lapis","dengo","lobo","mal","lirio"];
 var cont=0;
 var sorte= Math.floor(Math.random(0,8)*8);
 chave=palavras[sorte]
