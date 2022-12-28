@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 22, 22);
+    color:black
+  
+}
+#campoT{
+    background-color: rgb(240, 172, 152);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:10px;
+    left:400px;
+    border:2px solid azure;
+    height:600px;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+}
+#campoF{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    margin: 10px;
+    margin: 10px;
+
+}
+#campoP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+   
+   
+}
+#palavrass{
+    width: 50px;
+    height: 20px;
+    margin: 5px;
+}
+
+.FormataForca{
+    width: 40px;
+    height: 40px;
+    color:chocolate;
+    visibility: hidden;
+    font-size: 30px;
+}
+
+#Bot{
+    width: 100px;
+    height: 50px;
+}
+#Bot2{
+    width: 100px;
+    height: 50px;
+    visibility: hidden;
+}
+#vida{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:-30px;
+}
+
+.heart {
+    position: relative;
+    width: 60px;
+    height: 10px;
+    margin:20px;
+    justify-content: space-evenly;
+
+   
+  }
+  
+  .heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 80px;
+    border-radius: 50px 50px 0 0; 
+    background: red;
+
+  }
+  
+  .heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+
+  @media (max-width: 500px){
+
+    #campoT{
+        position: relative;
+        top:20px;
+        left:10px;
+    }
+
+  }
