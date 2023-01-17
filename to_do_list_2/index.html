@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="configuracao">
+        <div id="centralizPainel">
+        <h1>Display</h1>
+        <button onclick="exibe()" >Configuração</button>
+    </div>
+    <div id="centralizform">  
+        <h1>LocalStorage</h1>
+        <form name=daddo >
+            <label>Nome:</label><br>
+            <input type="text" name="fnome" id="fnome" size="20"><br><br>
+            <label>cor de fundo:</label><br>
+            <input type="radio" name="fcorf" onclick="definecor(1,'DeepSkyBlue')" >Azul Céu<br>
+            <input type="radio" name="fcorf" onclick="definecor(1,'crimson')" >Carmesin<br>
+            <input type="radio" name="fcorf" onclick="definecor(1,'lightblue')">Azul Claro<br>
+            <input type="radio" name="fcorf" onclick="definecor(1,'azure')">Azure<br>
+            <input type="radio" name="fcorf" onclick="definecor(1,'lightgreen')">cor 5<br>
+            <label>cor de fonte:</label><br>
+            <input type="radio" name="fcort" onclick="definecor(2,'black')" >Preto<br>
+            <input type="radio" name="fcort" onclick="definecor(2,'ghostwhite')" >Branco<br>
+            <input type="radio" name="fcort" onclick="definecor(2,'red')" >Vermelho<br>
+            <div  class="lado"  >
+                <input type="button"  value="Gravar" onclick="gravar()" ><br>
+                <input type="button"value="Padrao" onclick="padrao()" >
+                <input type="button"value="Fechar" onclick="fechar()" >
+               
+            </div>
+           
+    </form>
+    </div>
+    </div>
+    <div id="conjuntoList">
+        <div id="caixa">
+                <input type="texto" id="newI" >
+                <button id="buttonAdd">Add</button>
+                <button id="buttonTxt" onclick="imprimir()">Imprimir</button>
+                <br><br>
+        </div>
+        <div id="listatodo">
+                <ul id="listaAdd"></ul>
+
+        
+        </div>
+  </div>
+  <!---div id="conjuntoEsq">
+    <div id="caixa">
+       
+    </div>
+</-div--->
+    <script src="asset/js/main2.js"></script>
+       
+
+    
+</body>
+</html>
