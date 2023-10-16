@@ -1,2 +1,2 @@
 # Html_Css
-Repositorio para sites simples
+Sites simples para colocar em prática os meus estudos 
